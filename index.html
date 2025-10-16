@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <span>Overview</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Hours Recorded</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-title">
+                    <h1>Hours Dashboard</h1>
+                    <p>Productivity monitoring and employee registration</p>
+                </div>
+                <div class="header-actions">
+                    <button class="filter-button">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Month</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+            </header>
+
+            <section class="kpi-cards">
+                <div class="card">
+                    <h3>Total Hours</h3>
+                    <p class="kpi-value">1.248 <span class="kpi-unit">hrs</span></p>
+                    <p class="kpi-comparison">+5% vs. previous month</p>
+                </div>
+                <div class="card">
+                    <h3>Productive Hours</h3>
+                    <p class="kpi-value">1.102 <span class="kpi-unit">hrs</span></p>
+                    <p class="kpi-comparison">88% of total</p>
+                </div>
+                <div class="card">
+                    <h3>Daily Average</h3>
+                    <p class="kpi-value">7.8 <span class="kpi-unit">hrs</span></p>
+                    <p class="kpi-comparison">Goal: 8 hrs/day</p>
+                </div>
+                <div class="card">
+                    <h3>Active Employees</h3>
+                    <p class="kpi-value">22</p>
+                    <p class="kpi-comparison">2 new this month</p>
+                </div>
+            </section>
+
+            <section class="employee-records">
+                <h2>Recent Records</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Employee</th>
+                                <th>Date</th>
+                                <th>Clock In</th>
+                                <th>Clock Out</th>
+                                <th>Total Hours</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="employee-info">
+                                        
+                                        <span>Ana Silva</span>
+                                    </div>
+                                </td>
+                                <td>Oct 14, 2025</td>
+                                <td>09:01 AM</td>
+                                <td>06:05 PM</td>
+                                <td>8h 04m</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="employee-info">
+                                        
+                                        <span>Bruno Costa</span>
+                                    </div>
+                                </td>
+                                <td>Oct 14, 2025</td>
+                                <td>08:55 AM</td>
+                                <td>06:15 PM</td>
+                                <td>8h 20m</td>
+                                <td><span class="status overtime">Overtime</span></td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    <div class="employee-info">
+                                        
+                                        <span>Carla Mendes</span>
+                                    </div>
+                                </td>
+                                <td>Oct 14, 2025</td>
+                                <td>09:00 AM</td>
+                                <td>05:30 PM</td>
+                                <td>7h 30m</td>
+                                <td><span class="status pending">Incomplete</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="employee-info">
+                                        
+                                        <span>Diego Martins</span>
+                                    </div>
+                                </td>
+                                <td>Oct 13, 2025</td>
+                                <td>09:03 AM</td>
+                                <td>06:01 PM</td>
+                                <td>7h 58m</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
